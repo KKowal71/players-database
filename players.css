@@ -1,0 +1,95 @@
+body {
+    background-image: url('images/footballPitch.jpg');
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+
+table {
+    position: absolute;
+    background: black;
+    margin-top: 5%;
+    margin-left: 15%;
+    border: 3px solid black;
+    text-align: center;
+    padding: 0.1%;
+}
+
+table th {
+    background-color: yellowgreen;
+    font-size: 150%;
+    width: 150px;
+}
+
+table tr{
+    background-color: #f2f2f2;
+    font-size: 110%;
+}
+
+table tr:hover {
+    background-color: darkkhaki;
+}
+
+button {
+    border-radius: 5px;
+    background-color: yellowgreen;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+.addFrame {
+    position: relative;
+    display: grid;
+    margin-left: 8%;
+    font-size: 105%;
+}
+#confirmAdd, #confirmEdit {
+    margin-left: 20%;
+}
+
+#editAndAdd {
+    padding: 1%;
+    width: 10%;
+    margin-left: 70%;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: solid black 4px;
+    background: whitesmoke;
+}
+
+#deleteFrame {
+    padding: 10px;
+    width: 10%;
+    margin-left: 70%;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: solid black 4px;
+    background: whitesmoke;
+}
+
+.del {
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+#file {
+    margin-left: 36%;
+}
+
+.fileAdd {
+    font-size: 20px;
+}
+
+#saveButton {
+    margin-top: 3%;
+    margin-left: 74%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+input {
+    background-color: whitesmoke;
+    border: solid black 2px;
+    border-radius: 5px;
+}

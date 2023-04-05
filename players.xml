@@ -1,0 +1,108 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<tns:Players  author="Jakub Kowalik" index="242434"
+           xmlns:tns="http://www.JKxmlWorkspace.org/Players"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.JKxmlWorkspace.org/Players players.xsd">
+    <player id="1">
+        <firstName>Cristiano</firstName>
+        <lastName>Ronaldo</lastName>
+        <number>7</number>
+        <club>Al Naasr</club>
+    </player>
+    <player id="2">
+        <firstName>Vinicius</firstName>
+        <lastName>Junior</lastName>
+        <number>20</number>
+        <club>Real Madryt</club>
+    </player>
+    <player id="3">
+        <firstName>Karim</firstName>
+        <lastName>Benzema</lastName>
+        <number>9</number>
+        <club>Real Madryt</club>
+    </player>
+    <player id="4">
+        <firstName>Andres</firstName>
+        <lastName>Iniesta</lastName>
+        <number>8</number>
+        <club>FC Barcelona</club>
+    </player>
+    <player id="5">
+        <firstName>Pablo</firstName>
+        <lastName>Gavi</lastName>
+        <number>11</number>
+        <club>FC Barcelona</club>
+    </player>
+    <player id="6">
+        <firstName>Kylian</firstName>
+        <lastName>Mbappe</lastName>
+        <number>10</number>
+        <club>PSG</club>
+    </player>
+    <player id="7">
+        <firstName>Mohamed</firstName>
+        <lastName>Salah</lastName>
+        <number>10</number>
+        <club>Liverpool</club>
+    </player>
+    <player id="8">
+        <firstName>Thomas</firstName>
+        <lastName>Muller</lastName>
+        <number>19</number>
+        <club>Baern Monachium</club>
+    </player>
+    <player id="9">
+        <firstName>Joao</firstName>
+        <lastName>Felix</lastName>
+        <number>14</number>
+        <club>Chelsea</club>
+    </player>
+    <player id="10">
+        <firstName>Wojciech</firstName>
+        <lastName>Szczesny</lastName>
+        <number>1</number>
+        <club>Juventus</club>
+    </player>
+    <player id="11">
+        <firstName>Piotr</firstName>
+        <lastName>Zielinski</lastName>
+        <number>10</number>
+        <club>Napoli</club>
+    </player>
+    <player id="12">
+        <firstName>Luka</firstName>
+        <lastName>Modric</lastName>
+        <number>10</number>
+        <club>Real Madryt</club>
+    </player>
+    <player id="13">
+        <firstName>Robert</firstName>
+        <lastName>Lewandowski</lastName>
+        <number>9</number>
+        <club>FC Barcelona</club>
+    </player>
+    <player id="14">
+        <firstName>Kevin</firstName>
+        <lastName>De Bruyne</lastName>
+        <number>39</number>
+        <club>Manchester City</club>
+    </player>
+    <player id="15">
+        <firstName>Lucas</firstName>
+        <lastName>Moura</lastName>
+        <number>25</number>
+        <club>Tottenham</club>
+    </player>
+    <player id="16">
+        <firstName>Hugo</firstName>
+        <lastName>Lloris</lastName>
+        <number>1</number>
+        <club>Tottenham</club>
+    </player>
+    <player id="17">
+        <firstName>Toni</firstName>
+        <lastName>Kroos</lastName>
+        <number>6</number>
+        <club>Real Madryt</club>
+    </player>
+</tns:Players>

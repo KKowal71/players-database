@@ -1,0 +1,69 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.JKxmlWorkspace.org/Players"
+        xmlns:tns="http://www.JKxmlWorkspace.org/Players"
+        elementFormDefault="unqualified"
+        attributeFormDefault="unqualified">
+
+    <xsd:simpleType name="idType">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:minInclusive value="1"/>
+            <xsd:pattern value="[1-9]+[0-9]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="nameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/>
+            <xsd:maxLength value="15"/>
+            <xsd:pattern value="[A-Z]{1}[a-z]*"/>
+            <xsd:pattern value="[A-Z]{1}[a-z]* [A-Z]{1}[a-z]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="numberType">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="99"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="clubType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/>
+            <xsd:maxLength value="15"/>
+            <xsd:pattern value="[A-Z]{1}[a-z]* [A-Z]{1}[a-z]*"/>
+            <xsd:pattern value="[A-Z]{1}[a-z]*"/>
+            <xsd:pattern value="[A-Z]{2}[a-z]* [A-Z]{1}[a-z]*"/>
+            <xsd:pattern value="[A-Z]{3}"/>
+    </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="playerType">
+        <xsd:sequence>
+            <xsd:element name="firstName" type="tns:nameType"/>
+            <xsd:element name="lastName" type="tns:nameType"/>
+            <xsd:element name="number" type="tns:numberType"/>
+            <xsd:element name="club" type="tns:clubType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="playersType">
+        <xsd:sequence>
+            <xsd:element name="player" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="tns:playerType">
+                            <xsd:attribute name="id" type="tns:idType" use="required"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="author" type="xsd:string"/>
+        <xsd:attribute name="index" type="xsd:nonNegativeInteger"/>
+    </xsd:complexType>
+
+    <xsd:element name="Players" type="tns:playersType"/>
+</xsd:schema>
